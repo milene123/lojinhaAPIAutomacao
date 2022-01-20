@@ -22,7 +22,7 @@ public class ProdutoTest {
         //Configurando os dados da API Rest da Lojinha
         baseURI = "http://165.227.93.41";
         //port =8080;-- e aonde a aplicação esta rodando
-        basePath = "/lojinha";
+        basePath = "/lojinha-bugada";
 
         //Obter o token do usuario logado
         this.token = given()
