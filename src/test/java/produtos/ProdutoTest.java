@@ -21,7 +21,6 @@ public class ProdutoTest {
     public void beforeEach(){// vai chegar antes de cada teste
         //Configurando os dados da API Rest da Lojinha
         baseURI = "http://165.227.93.41";
-        //port =8080;-- e aonde a aplicação esta rodando
         basePath = "/lojinha-bugada";
 
         //Obter o token do usuario logado
@@ -49,7 +48,7 @@ public class ProdutoTest {
                 .then()
                     .assertThat()
                     .body("error", equalTo("O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"));
-                    //.statusCode(422);
+
     }
 
     @Test
@@ -67,6 +66,6 @@ public class ProdutoTest {
         .then()
                 .assertThat()
                 .body("error", equalTo("O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00"));
-                //.statusCode(422);
+
     }
 }
